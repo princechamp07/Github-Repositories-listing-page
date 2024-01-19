@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    
+    <title>Github Repositories listing page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #profile img {
+            border-radius: 50%;
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+      
+    </style>
+</head>
+<body class="bg-dark">
+    <nav class="navbar bg-dark">
+        <div class="container d-flex justify-content-evenly">
+            
+          <a class="navbar-brand" href="#">
+            <img src="pngwing.com.png" alt="Bootstrap" width="40" height="40"> 
+        </a>
+        <div class="text-light fw-bold">Github Repositories listing page</div> 
+          <div ><input type="text" id="username"  class="fw-bold p-1 rounded" autofocus placeholder="Search for Repositories . . ."> <button class="btn btn-primary fw-bold px-5" onclick="fetchRepositories()">Search</button>
+          </div>
+    
+        </div>
+          </nav>
+
+    <div id="profile"></div>
+          <div id="repositories"> 
+            <div class="card my-4">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-primary"><a href="https://github.com/princechamp07/netflix-design">Netflix Design</a></h5>
+                  <p class="card-text">No description available</p>
+                  <strong>Language:</strong>
+                  <a href="${repo.html_url}"><button class="btn btn-primary ">' Not specified '</button></a>
+               
+                  </div>
+              </div>
+              <div class="card my-4">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-primary"><a href="https://github.com/princechamp07/fashion-website-design">Fashion website design</a></h5>
+                  <p class="card-text">No description available</p>
+                  <strong>Language:</strong>
+                  <a href="${repo.html_url}"><button class="btn btn-primary ">' Not specified '</button></a>
+               
+                  </div>
+
+                  </div>
+         
+  
+          <script src="script.js"></script>
+</body>
+</html>
